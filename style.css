@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282a36;
+  background-image: linear-gradient(315deg, #282a36 0%, #44475a 100%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: #f8f8f2;
+}
+
+/* Homepage */
+.home-container {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #44475a;
+  color: #f8f8f2;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.card:active {
+  transform: translateY(2px);
+}
+
+.card:nth-child(1) {
+  background-color: #88c8d6; /* Light blue for Math */
+}
+
+.card:nth-child(2) {
+  background-color: #c784aa; /* Neon pink for English */
+}
+
+.card:nth-child(3) {
+  background-color: #88c898; /* Neon green for Science */
+}
+
+.card:nth-child(4) {
+  background-color: #d1d889; /* Light yellow for History */
+}
+
+.card:hover {
+  background-color: #ffb86c;
+  color: #282a36;
+}
+
+/* Quiz Container */
+.quiz-container {
+  background-color: #44475a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.1);
+  width: 600px;
+  max-width: 95vw;
+  overflow: hidden;
+}
+
+.quiz-header {
+  padding: 3rem;
+  color: #f8f8f2;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+  color: #f8f8f2;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #f8f8f2;
+}
+
+ul li label {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+ul li label:hover {
+  color: #ff79c6;
+}
+
+button {
+  background-color: #bd93f9;
+  color: #282a36;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff79c6;
+  color: #fff;
+}
+
+button:focus {
+  outline: none;
+  background-color: #ff5555;
+}
