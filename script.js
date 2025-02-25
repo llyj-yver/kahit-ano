@@ -529,8 +529,8 @@ const getSelected = () => {
   return answer;
 };
 
-const asksubject = () => {
-  
+const asksubject = (defaultSub) => {
+  let subject = defaultSub
 }
 
 const loadQuiz = () => {
@@ -555,7 +555,7 @@ function goToHome() {
 
 // ✅ Ensure the quiz loads correctly
 document.addEventListener("DOMContentLoaded", () => {
-  asksubject();
+  asksubject('math');
   loadQuiz();
 });
 
