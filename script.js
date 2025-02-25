@@ -530,7 +530,7 @@ const getSelected = () => {
 };
 
 const asksubject = (defaultSub) => {
-  let subject = defaultSub
+  let subject = defaultSub;
 }
 
 const loadQuiz = () => {
